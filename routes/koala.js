@@ -4,7 +4,7 @@ const store = require('../db/object-store')
 
 router.get(
     '/koala',
-    async (ctx, next) => await ctx.render ('hello', {items: await fetchIds()})
+    async (ctx, next) => ctx.render ('hello', {items: await fetchIds()})
 )
 
 async function fetchIds(){
