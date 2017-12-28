@@ -1,0 +1,7 @@
+LICENSE
+node_modules/is-generator-function/testling.html
+package-lock.json
+*.md
+*.ts
+
+!node-v8.9.3-linux-x64

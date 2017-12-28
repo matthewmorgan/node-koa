@@ -1,0 +1,19 @@
+{
+  "name": "koa-sample-app",
+  "regions": ["us-east-1"],
+  "profile": "up_deployment",
+  "hooks": {
+    "build": "make"
+  },
+  "proxy": {
+    "command": "./node-v8.9.3-linux-x64/bin/node app.js"
+  },
+  "lambda": {
+    "memory": 1024
+  },
+  "stages": {
+    "development": {
+      "domain": "dev.dulcetsoftware.com"
+    }
+  }
+}
