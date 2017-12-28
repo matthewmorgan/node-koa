@@ -8,7 +8,7 @@ router.get(
 )
 
 async function fetchIds(){
-  return (await store.listIds({Collection: 'YPT_Database', pageLimit: 1})).ids
+  return (await store.listIds({database: 'YPT_Database', collection: 'students', pageLimit: 1})).ids
 }
 
 module.exports = router
