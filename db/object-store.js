@@ -41,5 +41,4 @@ async function listIds({database, collection, ContinuationToken = null, pageLimi
   }
 }
 
-
 module.exports = {getObject, putObject, listIds}

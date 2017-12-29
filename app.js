@@ -18,9 +18,7 @@ app.use(njk(path.join(__dirname, 'views'), {
   noCache: process.env.NODE_ENV !== 'production',
   throwOnUndefined: true,
   filters: {
-    json: function (str) {
-      return JSON.stringify(str, null, 2);
-    },
+    json: str => JSON.stringify(str, null, 2),
     upperCase: str => str.toUpperCase(),
   },
   globals: {
