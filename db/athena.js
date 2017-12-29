@@ -13,7 +13,7 @@ const options = {
 async function findOne(){
   const queryString = `SELECT *
     FROM ypt.students
-    WHERE body='foobar-0ca4ab3a-7bad-49f1-92e1-e9af9d7f4e22'`
+    WHERE body='fizzbuzz'`
 
   return await Athena
       .Client({region: 'us-east-1'}, config)
